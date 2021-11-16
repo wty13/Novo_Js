@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<script>
+	// alert("Olá mundo");
+	// prompt("Diga alguma coisa");
+	// confirm("Clique em um botão");
+
+	// var nome = prompt("Digite seu nome");
+	// var cor = prompt("Qual sua cor favorita " + nome);
+
+	// document.write("Nome...:"+ nome +" <br> ");
+	// document.write("A cor favorite do "+nome+" é "+cor +" <br> ");
+
+	var opcao = prompt("Digite 1 ou 2 para continuar");
+	console.log(opcao);
+
+	switch(opcao){
+		case '1':
+		var pergunta = confirm("Você pretende continuar a operacao");
+		if(pergunta){
+			alert("Parabens esta ficando bom");
+
+		} else {
+			alert("Poxa vida, voce esta aflito, nao quer continuar");
+		}
+		break;
+
+		case '2':
+		var pergunta = confirm("Voce é casado?");
+		if(pergunta){
+			var conj = prompt("Qual é o nome do seu conjugue");
+			alert("Parabens por ser casado com o(a) "+ conj);
+		}
+		break;
+
+		default: console.log("Esta opcao nao existe");
+		break;
+	}
+
+	var valor = 10;
+
+	if (valor >= 10){
+		if (valor == 10){
+			console.log("O valor "+ valor + " é igual que 10");
+		} else {
+			console.log("O valor "+ valor + " é maoir que 10");
+		}
+	} else {
+		console.log("O valor "+ valor + " é menor que 10");
+	}
+
+</script>
+<body>
+	
+</body>
+</html>
